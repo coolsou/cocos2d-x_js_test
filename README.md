@@ -205,17 +205,20 @@ obj会被触发 ( obj['on_'+eventName](extra) )
 ```
 
 
-#view_layer
+#vega_layer
 `例 src/view/layer/example.js`
 ```
 需要继承 vega_layer
+~ 可以实现屏蔽其他层的触摸事件
+~ 通过 this.add_Child(obj)添加的obj对象，可以绑定 obj.onClick onDrag onDragEnd 方法
 ```
 
 
-#model
+#vega_model
 `例 src/mod/user_example.js`
 ```
 需要继承 vega_model
+~ 默认具备 vega.subpub 属性
 ```
 
 
